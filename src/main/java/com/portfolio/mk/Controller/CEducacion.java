@@ -2,7 +2,6 @@ package com.portfolio.mk.Controller;
 
 import com.portfolio.mk.Dto.dtoEducacion;
 import com.portfolio.mk.Entity.Educacion;
-import com.portfolio.mk.Entity.Experiencia;
 import com.portfolio.mk.Security.Controller.Mensaje;
 import com.portfolio.mk.Service.SEducacion;
 import org.apache.commons.lang3.StringUtils;

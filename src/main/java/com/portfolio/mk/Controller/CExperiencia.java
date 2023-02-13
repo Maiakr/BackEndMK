@@ -1,7 +1,6 @@
 package com.portfolio.mk.Controller;
 
 import com.portfolio.mk.Dto.dtoExperiencia;
-import com.portfolio.mk.Entity.Educacion;
 import com.portfolio.mk.Entity.Experiencia;
 import com.portfolio.mk.Security.Controller.Mensaje;
 import com.portfolio.mk.Service.SExperiencia;
@@ -27,7 +26,7 @@ public class CExperiencia {
     }
 
     @GetMapping("/detail/{id}")
-    public ResponseEntity<Educacion> getById(@PathVariable("id")int id){
+    public ResponseEntity<Experiencia> getById(@PathVariable("id")int id){
         if(!sExperiencia.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe"), HttpStatus.NOT_FOUND);
         }
