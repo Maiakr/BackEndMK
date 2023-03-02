@@ -2,6 +2,7 @@ package com.portfolio.mk.Dto;
 
 import javax.validation.constraints.NotBlank;
 
+
 public class dtoExperiencia {
     @NotBlank
     private String nombreE;

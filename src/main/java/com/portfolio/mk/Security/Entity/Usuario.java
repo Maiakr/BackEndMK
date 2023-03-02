@@ -1,5 +1,6 @@
 package com.portfolio.mk.Security.Entity;
 
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.HashSet;
@@ -19,7 +20,7 @@ public class Usuario {
     private String email;
     @NotNull
     private String password;
-    @ManyToMany (fetch= FetchType.EAGER)
+    @ManyToMany(fetch= FetchType.EAGER)
     @JoinTable(name = "usuario_rol", joinColumns = @JoinColumn(name ="usuario_id"), inverseJoinColumns = @JoinColumn(name ="rol_id" ))
     private Set<Rol> roles = new HashSet<>();
 

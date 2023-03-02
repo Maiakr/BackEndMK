@@ -5,6 +5,7 @@ import com.portfolio.mk.Security.Enums.RolNombre;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+
 @Entity
 public class Rol {
     @Id
