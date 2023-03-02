@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/skill")
-@CrossOrigin(origins ="http://localhost:4200")
+@CrossOrigin(origins ="https://frontendmk-a7321.web.app")
 
 
 public class CSkills {
